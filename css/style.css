@@ -1,8 +1,8 @@
-header, .izq, .derecha {
+header, .izq, .derecha, main, .textoRandom, .footer, .searchBar, .enlacesIdioma {
     display: flex;
 }
 
-header {
+header, .footer {
     justify-content: space-between;
 }
 
@@ -10,5 +10,29 @@ div {
     padding: 0.5em;
 }
 
+main {
+    flex-direction: column;
+}
 
+.searchItem {
+    display: inline;
+}
 
+.derecha, main, .enlacesIdioma, .searchBar{
+    align-items: center;
+}
+
+.enlacesIdioma {
+    padding: 0, 0.2em, 0, 0.2em;
+}
+
+.searchBar {
+    border: 0.1em solid grey;
+    border-radius: 1em;
+    max-height: 1.5em;
+}
+
+input {
+    min-width: 30em;
+    border-style: none;
+}
